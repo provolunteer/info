@@ -19,6 +19,7 @@ background-size: 12.29px 5.47px;
   background: #fff;
 }
       h1{
+	  width: 98%;
     font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         font-size: 16vw;
@@ -30,6 +31,7 @@ background-size: 12.29px 5.47px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 90%;
+  transform: translateZ(-1);
       }
 	  h2{
 	      font-family: 'Open Sans', sans-serif;
@@ -40,6 +42,7 @@ text-transform:Uppercase;
 			  padding: 0;
 			  margin: 0 auto;
 			  width: 98%;
+			  mix-blend-mode: screen;
 	  }
 	  .h2{
 	  font-size: 3.0vw;
@@ -48,7 +51,8 @@ text-transform:Uppercase;
 	  text-align: left;
 	  margin: 0 auto;
 	  padding: 0;
-	  color: #fff;
+	  color: #000;
+	  background: rgba(255, 255, 255, .0);
 	  }
 	  a{
 	  text-decoration: none;
@@ -57,14 +61,14 @@ text-transform:Uppercase;
   -webkit-text-fill-color: transparent;
 	  }
 	  #orange{
-	  width: 85%;
-	  margin: 5% 0 0 0;
+	  width: 100%;
+	  margin: 160% 0 0 0;
 	  padding: 0;
-	    display: block;
-  position: relative;
-  z-index: 1;
-   mix-blend-mode: screen;
+	    display: inline-block;
    opacity: 0.90;
+   z-index: -1;
+   	  transform: translateZ(-1px) scale(1.5);
+	  float: left;
 	  }
 	  .orange2 img{
 	opacity: 0.5;
@@ -106,49 +110,29 @@ text-transform:Uppercase;
 	  width: 100%;
 	  margin: 0 auto;
 	  padding: 0;
-	    perspective: 1px;
+  perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
 	  }
 	  .parralax{
 	  width: 100%;
-	  display: inline-block;
-  flex: 1 0 auto;
-  position: relative;
-  transform: translateZ(-1px) scale(1.5);
-  z-index: -1;
-	  }
-	  	  #film{
-	  background-color: rgba(61, 49, 69, 1);
+	  margin: 0 auto;
+	  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 	  }
 	  
 	  @media all and (max-width: 823px){
-	  
-	  	  #header{
-	  }
-	  	  .parralax{
-		  margin: 0 auto;
-		  padding: 0;
-		  height: 80%;
-	  }
-	  	  .parralax{;
-  transform: translateZ(-1px) scale();
-	  }
-	  #orange{
-	  margin: 0 auto;
-	  Float: left;
-	  mix-blend-mode: normal;
-	  }
-	  h1{
-	  margin: -30% 0 0 0;
-	  font-size: 13vh;
-	  }
-	  h2{
-	  font-size: 13vh;
-	  }
-	  .h2{
-	  font-size: 13vh;
-	  }
+h2{
+font-size: 2em;
+}
+.h2{
+font-size: 2em;
+}
 	  }
     </style>
     <head>
@@ -156,14 +140,11 @@ text-transform:Uppercase;
 	  <div id="parralax">
 <div id="header" class="parralax">
 <h1>PRO<br />VOLUNTEER</h1>
-<br />
-<div id="film">
 <h2>Email: <a href="mailto:provolunteer@protonmail.com?Subject=Volunteer%20Info">@protonmail.com</a></h2>
 <h2>Text: <a>410 - 900 - 7631</a></h2>
 <h2>Twitter: <a href="https://twitter.com/hsincheu" target="_blank">@hsincheu</a></h2>
 <br /><br  />
 <h2 class="h2"><a>Photography. Volunteer Coordinator. Traffic Patrol. Race Timer. Cleanup Crew. Photoshop Stuff. Fish & Run.</a></h2>
-</div>
 </div>
 <div id="orange">
 <div class="orange2">
